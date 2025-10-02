@@ -5,7 +5,7 @@ class Notes {
 	public static void main(String[] args) {
 		//create a fileReader
 
-		// FileReader inputStream = null;
+		// FileReader inputStream = null; //no value
 
 		// try {
 		// 	inputStream = new FileReader("testfile.txt"); //FileReader(filename)
@@ -14,6 +14,7 @@ class Notes {
 
 		// 	while ((c = inputStream.read()) != -1) { //reading from the file
 		// 		//-1 means that the read() found no character
+		// 		//newlines are characters
 		// 		System.out.print((char)c);
 		// 	}
 		// }
@@ -61,34 +62,34 @@ class Notes {
 		// }
 		
 
-		Scanner s = null;
+	// 	Scanner s = null;
 
-		try {
-			s = new Scanner(new BufferedReader(new FileReader("testfile.txt")));
+	// 	try {
+	// 		s = new Scanner(new BufferedReader(new FileReader("testfile.txt")));
 
-			while (s.hasNext()) { 
-				System.out.print(s.next() + " "); //.next stops at punctuation, spaces, and newlines
-			}
-		}
-		catch (IOException e) {
-			System.out.println(e);
-		}
-		finally {
-			if (s != null) {
-				s.close();
-			}
-		}
-		/*
-		The scanner read in other data types besides strings
-		It can also validate that the information is that data 		
-		type before doing so
-		hasNextDouble
-		nextDouble
-		hasNextInt
-		nextInt
-		hasNextBoolean
-		nextBoolean
-		nextLine
-		*/
+	// 		while (s.hasNext()) { 
+	// 			System.out.print(s.next() + " "); //.next stops at punctuation, spaces, and newlines
+	// 		}
+	// 	}
+	// 	catch (IOException e) {
+	// 		System.out.println(e);
+	// 	}
+	// 	finally {
+	// 		if (s != null) {
+	// 			s.close();
+	// 		}
+	// 	}
+	// 	/*
+	// 	The scanner read in other data types besides strings
+	// 	It can also validate that the information is that data 		
+	// 	type before doing so
+	// 	hasNextDouble()
+	// 	nextDouble()
+	// 	hasNextInt()
+	// 	nextInt()
+	// 	hasNextBoolean()
+	// 	nextBoolean()
+	// 	nextLine() - reads whole line
+	// 	*/
 	}
 }
